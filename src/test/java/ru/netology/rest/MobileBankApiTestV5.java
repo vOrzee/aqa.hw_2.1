@@ -21,7 +21,7 @@ class MobileBankApiTestV5 {
                 .statusCode(200)
                 .contentType(ContentType.JSON)
                 .body("every{ it.balance >= 0 }", is(true))
-                .body("every{ it.currency == 'RUB' || it.currency == 'USD' }", is(true))
+                .body("every{ it.currency == 'RUR' || it.currency == 'USD' }", is(true))
         ;
     }
 }
